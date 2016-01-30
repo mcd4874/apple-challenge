@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F01E6991C5D3D7000627EEB /* iphone_register_complete.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F01E6981C5D3D7000627EEB /* iphone_register_complete.jpg */; };
+		4F01E69B1C5D405A00627EEB /* iphone_login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F01E69A1C5D405A00627EEB /* iphone_login.jpg */; };
+		4F01E69D1C5D409600627EEB /* iphone_registerpage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F01E69C1C5D409600627EEB /* iphone_registerpage.jpg */; };
+		4F01E69F1C5D42A700627EEB /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01E69E1C5D42A700627EEB /* registerViewController.swift */; };
+		4F01E6A21C5D62D100627EEB /* register_complete.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F01E6A11C5D62D100627EEB /* register_complete.png */; };
+		4F01E6A41C5D631400627EEB /* textonly_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F01E6A31C5D631400627EEB /* textonly_icon.png */; };
+		4F01E6A61C5D632400627EEB /* welcome_meetme.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F01E6A51C5D632400627EEB /* welcome_meetme.png */; };
+		4F01E6A81C5D633000627EEB /* meetme_mainlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F01E6A71C5D633000627EEB /* meetme_mainlogo.png */; };
+		4F01E6AA1C5D633300627EEB /* large_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F01E6A91C5D633300627EEB /* large_pin.png */; };
+		4F01E6AC1C5D633700627EEB /* lock_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F01E6AB1C5D633700627EEB /* lock_icon.png */; };
+		4F01E6AE1C5D633A00627EEB /* iphone_footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F01E6AD1C5D633A00627EEB /* iphone_footer.png */; };
+		4F01E6B01C5D634300627EEB /* iphone_droppedpin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F01E6AF1C5D634300627EEB /* iphone_droppedpin.png */; };
+		4F01E6B21C5D634B00627EEB /* create_account.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F01E6B11C5D634B00627EEB /* create_account.png */; };
 		4FDBB3911C5B230A001A9497 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDBB3901C5B230A001A9497 /* AppDelegate.swift */; };
 		4FDBB3931C5B230A001A9497 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDBB3921C5B230A001A9497 /* ViewController.swift */; };
 		4FDBB3961C5B230A001A9497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDBB3941C5B230A001A9497 /* Main.storyboard */; };
@@ -35,6 +48,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F01E6981C5D3D7000627EEB /* iphone_register_complete.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iphone_register_complete.jpg; sourceTree = "<group>"; };
+		4F01E69A1C5D405A00627EEB /* iphone_login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iphone_login.jpg; sourceTree = "<group>"; };
+		4F01E69C1C5D409600627EEB /* iphone_registerpage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iphone_registerpage.jpg; sourceTree = "<group>"; };
+		4F01E69E1C5D42A700627EEB /* registerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
+		4F01E6A11C5D62D100627EEB /* register_complete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = register_complete.png; sourceTree = "<group>"; };
+		4F01E6A31C5D631400627EEB /* textonly_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = textonly_icon.png; path = ../../../../Desktop/textonly_icon.png; sourceTree = "<group>"; };
+		4F01E6A51C5D632400627EEB /* welcome_meetme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = welcome_meetme.png; path = ../../../../Desktop/welcome_meetme.png; sourceTree = "<group>"; };
+		4F01E6A71C5D633000627EEB /* meetme_mainlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = meetme_mainlogo.png; path = ../../../../Desktop/meetme_mainlogo.png; sourceTree = "<group>"; };
+		4F01E6A91C5D633300627EEB /* large_pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = large_pin.png; path = ../../../../Desktop/large_pin.png; sourceTree = "<group>"; };
+		4F01E6AB1C5D633700627EEB /* lock_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lock_icon.png; path = ../../../../Desktop/lock_icon.png; sourceTree = "<group>"; };
+		4F01E6AD1C5D633A00627EEB /* iphone_footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iphone_footer.png; path = ../../../../Desktop/iphone_footer.png; sourceTree = "<group>"; };
+		4F01E6AF1C5D634300627EEB /* iphone_droppedpin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iphone_droppedpin.png; path = ../../../../Desktop/iphone_droppedpin.png; sourceTree = "<group>"; };
+		4F01E6B11C5D634B00627EEB /* create_account.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = create_account.png; path = ../../../../Desktop/create_account.png; sourceTree = "<group>"; };
 		4FDBB38D1C5B230A001A9497 /* Apple Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDBB3901C5B230A001A9497 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FDBB3921C5B230A001A9497 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +102,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F01E6A01C5D62B100627EEB /* image */ = {
+			isa = PBXGroup;
+			children = (
+				4F01E6B11C5D634B00627EEB /* create_account.png */,
+				4F01E6AF1C5D634300627EEB /* iphone_droppedpin.png */,
+				4F01E6AD1C5D633A00627EEB /* iphone_footer.png */,
+				4F01E6AB1C5D633700627EEB /* lock_icon.png */,
+				4F01E6A91C5D633300627EEB /* large_pin.png */,
+				4F01E6A71C5D633000627EEB /* meetme_mainlogo.png */,
+				4F01E6A51C5D632400627EEB /* welcome_meetme.png */,
+				4F01E6A31C5D631400627EEB /* textonly_icon.png */,
+				4F01E6A11C5D62D100627EEB /* register_complete.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
 		4FDBB3841C5B230A001A9497 = {
 			isa = PBXGroup;
 			children = (
@@ -99,8 +141,13 @@
 		4FDBB38F1C5B230A001A9497 /* Apple Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				4F01E6A01C5D62B100627EEB /* image */,
+				4F01E69C1C5D409600627EEB /* iphone_registerpage.jpg */,
+				4F01E69A1C5D405A00627EEB /* iphone_login.jpg */,
+				4F01E6981C5D3D7000627EEB /* iphone_register_complete.jpg */,
 				4FDBB3901C5B230A001A9497 /* AppDelegate.swift */,
 				4FDBB3921C5B230A001A9497 /* ViewController.swift */,
+				4F01E69E1C5D42A700627EEB /* registerViewController.swift */,
 				4FDBB3941C5B230A001A9497 /* Main.storyboard */,
 				4FDBB39A1C5B230A001A9497 /* Assets.xcassets */,
 				4FDBB39C1C5B230A001A9497 /* LaunchScreen.storyboard */,
@@ -196,6 +243,7 @@
 				TargetAttributes = {
 					4FDBB38C1C5B230A001A9497 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2S3D8J8M3T;
 					};
 					4FDBB3A31C5B230A001A9497 = {
 						CreatedOnToolsVersion = 7.2;
@@ -232,8 +280,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F01E6AA1C5D633300627EEB /* large_pin.png in Resources */,
 				4FDBB39E1C5B230A001A9497 /* LaunchScreen.storyboard in Resources */,
 				4FDBB39B1C5B230A001A9497 /* Assets.xcassets in Resources */,
+				4F01E6AE1C5D633A00627EEB /* iphone_footer.png in Resources */,
+				4F01E69B1C5D405A00627EEB /* iphone_login.jpg in Resources */,
+				4F01E6A41C5D631400627EEB /* textonly_icon.png in Resources */,
+				4F01E6A81C5D633000627EEB /* meetme_mainlogo.png in Resources */,
+				4F01E6B01C5D634300627EEB /* iphone_droppedpin.png in Resources */,
+				4F01E6A21C5D62D100627EEB /* register_complete.png in Resources */,
+				4F01E6B21C5D634B00627EEB /* create_account.png in Resources */,
+				4F01E6991C5D3D7000627EEB /* iphone_register_complete.jpg in Resources */,
+				4F01E69D1C5D409600627EEB /* iphone_registerpage.jpg in Resources */,
+				4F01E6AC1C5D633700627EEB /* lock_icon.png in Resources */,
+				4F01E6A61C5D632400627EEB /* welcome_meetme.png in Resources */,
 				4FDBB3961C5B230A001A9497 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +322,7 @@
 				4FDBB3931C5B230A001A9497 /* ViewController.swift in Sources */,
 				4FDBB3911C5B230A001A9497 /* AppDelegate.swift in Sources */,
 				4FDBB3991C5B230A001A9497 /* Apple_Challenge.xcdatamodeld in Sources */,
+				4F01E69F1C5D42A700627EEB /* registerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,10 +464,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Apple Challenge/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appfish.Apple-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -414,10 +478,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Apple Challenge/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appfish.Apple-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -488,6 +555,7 @@
 				4FDBB3BA1C5B230A001A9497 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FDBB3BB1C5B230A001A9497 /* Build configuration list for PBXNativeTarget "Apple ChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +564,7 @@
 				4FDBB3BD1C5B230A001A9497 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FDBB3BE1C5B230A001A9497 /* Build configuration list for PBXNativeTarget "Apple ChallengeUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +573,7 @@
 				4FDBB3C01C5B230A001A9497 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
