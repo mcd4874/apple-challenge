@@ -40,21 +40,21 @@ class registerViewController: UIViewController {
         
         if username.text == "" || password.text == "" || repeatPassword.text == "" {
             
-            
+            displayAlert("Invalid form", message: "please enter the appropriate information")
             
         } else {
             
             var errorMessage = "Try again"
             
             if password.text! == repeatPassword.text! {
-                var parameters = [
+                let parameters = [
                     "username":username.text!,
                     "password":password.text!
                 ] as Dictionary<String,String>
                 
                 let url = NSURL(string: "http://hh.nickrung.me:3000/api")
                 
-                var session = NSURLSession.sharedSession()
+                let session = NSURLSession.sharedSession()
                 
                 let requrest = NSMutableURLRequest(URL: url!)
                 
@@ -69,10 +69,10 @@ class registerViewController: UIViewController {
                 }
                 
                 //create dataTask using the session object to send data to the server
-                var task = session.dataTaskWithRequest(requrest, completionHandler: { (data, response, error) -> Void in
+                let task = session.dataTaskWithRequest(requrest, completionHandler: { (data, response, error) -> Void in
                     print("Response: \(response)")
                     
-                    var dataSTR = NSString(data: data!, encoding: NSUTF8StringEncoding)
+                    let dataSTR = NSString(data: data!, encoding: NSUTF8StringEncoding)
                     print("Body: \(dataSTR)")
                     
                     do{
@@ -83,14 +83,13 @@ class registerViewController: UIViewController {
                             // check and make sure that json has a value using optional binding.
                         
                                 // Okay, the parsedJSON is here, let's get the value for 'success' out of it
-                            var success = json["success"] as? Int
+                            let success = json["success"] as? Int
                             print("Succes: \(success)")
                             
-//                            else {
-//                                // Woa, okay the json object was nil, something went worng. Maybe the server isn't running?
-//                                let jsonStr = NSString(data: data!, encoding: NSUTF8StringEncoding)
-//                                print("Error could not parse JSON: \(jsonStr)")
-//                            }
+                            //successful register
+                            //move to ready login view
+                            self.performSegueWithIdentifier("finishRegister", sender: self)
+                            
                             
                         } else {
                             

@@ -20,6 +20,12 @@
 		4F01E6AE1C5D633A00627EEB /* iphone_footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F01E6AD1C5D633A00627EEB /* iphone_footer.png */; };
 		4F01E6B01C5D634300627EEB /* iphone_droppedpin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F01E6AF1C5D634300627EEB /* iphone_droppedpin.png */; };
 		4F01E6B21C5D634B00627EEB /* create_account.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F01E6B11C5D634B00627EEB /* create_account.png */; };
+		4F01E6B41C5D690100627EEB /* iphone_register_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F01E6B31C5D690100627EEB /* iphone_register_bg.jpg */; };
+		4F01E6B61C5D690600627EEB /* iphone_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F01E6B51C5D690600627EEB /* iphone_bg.jpg */; };
+		4F01E6B81C5D71F500627EEB /* profile_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F01E6B71C5D71F500627EEB /* profile_icon.png */; };
+		4F01E6BA1C5D954900627EEB /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01E6B91C5D954900627EEB /* loginController.swift */; };
+		4F01E6BC1C5D97AD00627EEB /* readyLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01E6BB1C5D97AD00627EEB /* readyLoginController.swift */; };
+		4F01E6BE1C5DA9CE00627EEB /* formViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01E6BD1C5DA9CE00627EEB /* formViewController.swift */; };
 		4FDBB3911C5B230A001A9497 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDBB3901C5B230A001A9497 /* AppDelegate.swift */; };
 		4FDBB3931C5B230A001A9497 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDBB3921C5B230A001A9497 /* ViewController.swift */; };
 		4FDBB3961C5B230A001A9497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDBB3941C5B230A001A9497 /* Main.storyboard */; };
@@ -61,6 +67,12 @@
 		4F01E6AD1C5D633A00627EEB /* iphone_footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iphone_footer.png; path = ../../../../Desktop/iphone_footer.png; sourceTree = "<group>"; };
 		4F01E6AF1C5D634300627EEB /* iphone_droppedpin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iphone_droppedpin.png; path = ../../../../Desktop/iphone_droppedpin.png; sourceTree = "<group>"; };
 		4F01E6B11C5D634B00627EEB /* create_account.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = create_account.png; path = ../../../../Desktop/create_account.png; sourceTree = "<group>"; };
+		4F01E6B31C5D690100627EEB /* iphone_register_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = iphone_register_bg.jpg; path = ../../../../Desktop/iphone_register_bg.jpg; sourceTree = "<group>"; };
+		4F01E6B51C5D690600627EEB /* iphone_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = iphone_bg.jpg; path = ../../../../Desktop/iphone_bg.jpg; sourceTree = "<group>"; };
+		4F01E6B71C5D71F500627EEB /* profile_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profile_icon.png; path = ../../../../Desktop/profile_icon.png; sourceTree = "<group>"; };
+		4F01E6B91C5D954900627EEB /* loginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = loginController.swift; path = ../loginController.swift; sourceTree = "<group>"; };
+		4F01E6BB1C5D97AD00627EEB /* readyLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = readyLoginController.swift; sourceTree = "<group>"; };
+		4F01E6BD1C5DA9CE00627EEB /* formViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = formViewController.swift; sourceTree = "<group>"; };
 		4FDBB38D1C5B230A001A9497 /* Apple Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDBB3901C5B230A001A9497 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FDBB3921C5B230A001A9497 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +117,9 @@
 		4F01E6A01C5D62B100627EEB /* image */ = {
 			isa = PBXGroup;
 			children = (
+				4F01E6B71C5D71F500627EEB /* profile_icon.png */,
+				4F01E6B51C5D690600627EEB /* iphone_bg.jpg */,
+				4F01E6B31C5D690100627EEB /* iphone_register_bg.jpg */,
 				4F01E6B11C5D634B00627EEB /* create_account.png */,
 				4F01E6AF1C5D634300627EEB /* iphone_droppedpin.png */,
 				4F01E6AD1C5D633A00627EEB /* iphone_footer.png */,
@@ -141,6 +156,7 @@
 		4FDBB38F1C5B230A001A9497 /* Apple Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				4F01E6B91C5D954900627EEB /* loginController.swift */,
 				4F01E6A01C5D62B100627EEB /* image */,
 				4F01E69C1C5D409600627EEB /* iphone_registerpage.jpg */,
 				4F01E69A1C5D405A00627EEB /* iphone_login.jpg */,
@@ -149,6 +165,8 @@
 				4FDBB3921C5B230A001A9497 /* ViewController.swift */,
 				4F01E69E1C5D42A700627EEB /* registerViewController.swift */,
 				4FDBB3941C5B230A001A9497 /* Main.storyboard */,
+				4F01E6BD1C5DA9CE00627EEB /* formViewController.swift */,
+				4F01E6BB1C5D97AD00627EEB /* readyLoginController.swift */,
 				4FDBB39A1C5B230A001A9497 /* Assets.xcassets */,
 				4FDBB39C1C5B230A001A9497 /* LaunchScreen.storyboard */,
 				4FDBB39F1C5B230A001A9497 /* Info.plist */,
@@ -284,6 +302,9 @@
 				4FDBB39E1C5B230A001A9497 /* LaunchScreen.storyboard in Resources */,
 				4FDBB39B1C5B230A001A9497 /* Assets.xcassets in Resources */,
 				4F01E6AE1C5D633A00627EEB /* iphone_footer.png in Resources */,
+				4F01E6B81C5D71F500627EEB /* profile_icon.png in Resources */,
+				4F01E6B41C5D690100627EEB /* iphone_register_bg.jpg in Resources */,
+				4F01E6B61C5D690600627EEB /* iphone_bg.jpg in Resources */,
 				4F01E69B1C5D405A00627EEB /* iphone_login.jpg in Resources */,
 				4F01E6A41C5D631400627EEB /* textonly_icon.png in Resources */,
 				4F01E6A81C5D633000627EEB /* meetme_mainlogo.png in Resources */,
@@ -320,9 +341,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FDBB3931C5B230A001A9497 /* ViewController.swift in Sources */,
+				4F01E6BA1C5D954900627EEB /* loginController.swift in Sources */,
 				4FDBB3911C5B230A001A9497 /* AppDelegate.swift in Sources */,
 				4FDBB3991C5B230A001A9497 /* Apple_Challenge.xcdatamodeld in Sources */,
+				4F01E6BE1C5DA9CE00627EEB /* formViewController.swift in Sources */,
 				4F01E69F1C5D42A700627EEB /* registerViewController.swift in Sources */,
+				4F01E6BC1C5D97AD00627EEB /* readyLoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

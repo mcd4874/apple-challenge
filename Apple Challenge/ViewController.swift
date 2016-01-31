@@ -10,13 +10,22 @@ import UIKit
 import CoreLocation
 import MapKit
 
-var longitude:CLLocationDegrees = 0
-var latitude:CLLocationDegrees = 0
 
 class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
-    var timer = NSTimer()
+    var receiveTopic = ""
+    var receiveDetail = ""
+    var receiveTime:Int = 0
     
+    var longitude:CLLocationDegrees = 0
+    var latitude:CLLocationDegrees = 0
+    
+    
+    let pin = MKPointAnnotation()
+    //let currentPin = MKPointAnnotation()
+    var timer = NSTimer()
+    var checkTime  = 0
+    var timeInterval  = 5
     //set the funciton to the variable. it will trigger the function whenever you set the value to
     var updateLocationActive:Bool! {
     
@@ -36,6 +45,51 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     }
     
+    @IBAction func addForm(sender: AnyObject) {
+        
+        //self.performSegueWithIdentifier("form", sender: self )
+        // if timer is working
+        if timer.valid == true {
+            
+            // create a new form. We need to stop the timer
+            timer.invalidate()
+            
+            
+        }
+        
+    }
+    
+    
+    @IBAction func stopMap(sender: AnyObject) {
+        
+        timer.invalidate()
+        
+    }
+    
+    
+    @IBAction func pauseTimer(sender: AnyObject) {
+        
+        manager.stopUpdatingLocation()
+        
+    }
+    
+    
+    @IBAction func resumeUpdateLocation(sender: AnyObject) {
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(Double(timeInterval), target: self, selector: Selector("updateLocation"), userInfo: nil, repeats: true)
+        
+    }
+    
+    
+    @IBAction func logOUt(sender: AnyObject) {
+        
+        let appDomain = NSBundle.mainBundle().bundleIdentifier
+        NSUserDefaults.standardUserDefaults().removePersistentDomainForName(appDomain!)
+        
+        self.performSegueWithIdentifier("logout", sender: self)
+        
+    }
+    
     
     @IBOutlet weak var mapView: MKMapView!
     
@@ -47,9 +101,24 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        updateLocationActive = true
+        updateLocationActive = false
     }
 
+    
+    //pass data between sequence
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "form" {
+            
+            if let destination = segue.destinationViewController as? formViewController {
+                
+                timer.invalidate()
+                
+            }
+            
+        }
+        
+    }
     
     
     override func viewDidLoad() {
@@ -66,36 +135,59 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         //set up the map display
         mapView.delegate = self
         mapView.mapType = MKMapType.Satellite
-        mapView.showsUserLocation = true
+        //mapView.showsUserLocation = true
         
         
-        
-        timer = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: Selector("updateLocation"), userInfo: nil, repeats: true)
+        if receiveTime != 0 {
+            updateLocationActive = true
+            
+            timer = NSTimer.scheduledTimerWithTimeInterval(Double(timeInterval), target: self, selector: Selector("updateLocation"), userInfo: nil, repeats: true)
+            
+                
+            
+            
+        } else {
+            print("not start timer yet")
+            
+        }
         
     }
     
-    func updateLocation() {
         
-        updateLocationActive = true
+    func updateLocation() {
+        if checkTime < receiveTime {
+            checkTime += timeInterval
+            updateLocationActive = true
+            print("total time : \(receiveTime)")
+        } else {
+            //stop the timer if we pass the limit amount of time
+            print("stop timer")
+            updateLocationActive = false
+            timer.invalidate()
+            print("check time: \(checkTime)")
+        }
+        
+
         
     }
 
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        var userLocation: CLLocation = locations[0]
+        let userLocation: CLLocation = locations[0]
         
         //save the latitude and longitude globally
         latitude = userLocation.coordinate.latitude
         longitude = userLocation.coordinate.longitude
         
         //display the map
-        let location = locations.last! as CLLocation
+        //
         
         let center = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        self.pin.coordinate = center
         
-        var spanX = 0.005
+        let spanX = 0.005
         
-        var spanY = 0.005
+        let spanY = 0.005
         
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: spanX, longitudeDelta: spanY))
         
@@ -122,16 +214,25 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
                 let thoroughfare = p.thoroughfare ?? ""
                 
                 self.locationInformation.text = "\(subThrough), \(thoroughfare), \(administrative), \(postal), \(locality), \(country)"
-                
+                //print(self.receiveTime)
                 self.updateLocationActive = false
+                
+                
+                self.pin.title = "\(self.receiveTopic)"
+                self.pin.subtitle = "now - "
+                self.mapView.addAnnotation(self.pin)
+                self.mapView.selectAnnotation(self.pin, animated: true)
+                
+                
+                
             }
             
         }
         
         
         
-        
     }
+    
     
     
     override func didReceiveMemoryWarning() {
@@ -139,6 +240,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         // Dispose of any resources that can be recreated.
     }
 
-
+    
 }
 
